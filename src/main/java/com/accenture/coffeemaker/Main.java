@@ -27,16 +27,20 @@ public class Main {
         - Display: Displays string message on an LCD display (use console log for testing)
                     The availability check method shouldn't throw any exception for now.
      */
+    private static CoffeMaker coffeMaker = new CoffeMaker(10);
 
     public static void main(String[] args) {
+        coffeMaker.display.showMessage("Welcome! The coffeeMaker has enough beans for 10 cups of coffee.");
         printMenu();
 
         while (true) {
             int input = readInput();
             if (input == 1) {
-                System.out.println("Not implemented yet");
+                coffeMaker.placeCupOnServeTray();
+                coffeMaker.makeCoffee();
             } else if (input == 2) {
-                System.out.println("Not implemented yet");
+                coffeMaker.refillBeanTray();
+                coffeMaker.getRemainingCups();
             } else if (input == 3) {
                 break;
             } else {
