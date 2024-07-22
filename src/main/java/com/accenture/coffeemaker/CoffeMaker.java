@@ -19,7 +19,7 @@ public class CoffeMaker {
             display.checkAvailability();
 
             beanTray.useBeans();
-            serveTray.remveCup();
+            serveTray.removeCup();
 
             display.showMessage("Your coffee is ready!");
             display.showMessage("Remaining cups of coffee that can be made: "+ getRemainingCups());

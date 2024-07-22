@@ -19,7 +19,7 @@ public class ServeTray extends CoffeeMakerModule {
         this.hasCup = true;
     }
 
-    public void remveCup() {
+    public void removeCup() {
         this.hasCup = false;
     }
 }
